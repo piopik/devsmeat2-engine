@@ -1,0 +1,48 @@
+[
+  {
+    "question" : "a",
+    "type" : "single",
+    "ansewers" : [
+      {
+        "id" : 0,
+        "answer" : "A"
+      },
+      {
+        "id" : 1,
+        "answer" : "B"
+      },
+      {
+        "id" : 2,
+        "answer" : "C"
+      },
+      {
+        "id" : 3,
+        "answer" : "D"
+      }
+    ],
+    "correct" : 2
+  },
+  {
+    "question" : "a",
+    "type" : "multi",
+    "ansewers" : [
+      {
+        "id" : 0,
+        "answer" : "A"
+      },
+      {
+        "id" : 1,
+        "answer" : "B"
+      },
+      {
+        "id" : 2,
+        "answer" : "C"
+      },
+      {
+        "id" : 3,
+        "answer" : "D"
+      }
+    ],
+    "correct" : [0,1,2,3]
+  }
+]
