@@ -99,6 +99,7 @@ Engine created to provide service with neccessary functionality for devmeats #2 
 
 #### leaderboard
 
+```javascript
 {
     leaderboard : [
         {
@@ -121,6 +122,7 @@ Engine created to provide service with neccessary functionality for devmeats #2 
         }
     ]
 }
+```
 
 #### leaderboardFinish
 
