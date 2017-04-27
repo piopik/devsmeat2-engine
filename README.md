@@ -20,7 +20,31 @@ Engine created to provide service with neccessary functionality for devmeats #2 
 - **npm run build** transpile to distribution version
 - **npm run start** run distribiution version
 
-## Websocket action
+## Websocket actions
+
+### Inputs
+
+#### answer
+
+### Outputs
+
+#### joined
+
+#### userJoined
+
+#### userLeft
+
+#### question
+
+#### questionFinish
+
+#### leaderboard
+
+#### leaderboardFinish
+
+#### gameFinish
+
+#### userAnswered
 
 ## Authors
 
