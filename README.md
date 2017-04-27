@@ -20,38 +20,132 @@ Engine created to provide service with neccessary functionality for devmeats #2 
 - **npm run build** transpile to distribution version
 - **npm run start** run distribiution version
 
-## Websocket actions
+## Websocket types of messages
 
-### Inputs
+### Input
 
 #### answer
 
 ```javascript
 {
-    playerId : 1,
+    id : '41XTDbE',
     answer : [1,2,3,4]
 }
 ```
 
-### Outputs
+### Output
 
 #### joined
 
-#### userJoined
+```javascript
+{
+    name : 'Red',
+    color : '#ff0000',
+    id : '41XTDbE'
+}
+```
 
-#### userLeft
+#### message
+
+```javascript
+{
+    test : 'User Red has joined the game'
+}
+```
 
 #### question
 
+```javascript
+{
+    "question" : "a",
+    "type" : "single",
+    "ansewers" : [
+      {
+        "id" : 0,
+        "answer" : "A"
+      },
+      {
+        "id" : 1,
+        "answer" : "B"
+      },
+      {
+        "id" : 2,
+        "answer" : "C"
+      },
+      {
+        "id" : 3,
+        "answer" : "D"
+      }
+    ]
+  }
+```
+
+#### questionResult
+
+```javascript
+{
+    correct : true,
+    points : 1
+}
+```
+
 #### questionFinish
+
+```javascript
+{
+    // empty object
+}
+```
 
 #### leaderboard
 
+{
+    leaderboard : [
+        {
+            position : 1
+            name : 'Red',
+            color : '#ff0000',
+            points : 21
+        },
+        {
+            position : 1
+            name : 'Green',
+            color : '#00ff00',
+            points : 12
+        },
+        {
+            position : 1
+            name : 'Blue',
+            color : '#0000ff',
+            points : 6
+        }
+    ]
+}
+
 #### leaderboardFinish
+
+```javascript
+{
+    // empty object
+}
+```
 
 #### gameFinish
 
-#### userAnswered
+```javascript
+{
+    // empty object
+}
+```
+
+#### userPoints
+
+```javascript
+{
+    username : 'Green',
+    points : 3
+}
+```
 
 ## Authors
 
