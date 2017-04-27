@@ -26,6 +26,13 @@ Engine created to provide service with neccessary functionality for devmeats #2 
 
 #### answer
 
+```javascript
+{
+    playerId : 1,
+    answer : [1,2,3,4]
+}
+```
+
 ### Outputs
 
 #### joined
