@@ -20,6 +20,10 @@ Engine created to provide service with neccessary functionality for devmeats #2 
 - **npm run build** transpile to distribution version
 - **npm run start** run distribiution version
 
+## Messaging diagram
+
+![alt ---](https://raw.githubusercontent.com/piopik/devsmeat2-engine/master/docs/diagram.jpg)
+
 ## Websocket types of messages
 
 ### Input
@@ -109,13 +113,13 @@ Engine created to provide service with neccessary functionality for devmeats #2 
             points : 21
         },
         {
-            position : 1
+            position : 2
             name : 'Green',
             color : '#00ff00',
             points : 12
         },
         {
-            position : 1
+            position : 3
             name : 'Blue',
             color : '#0000ff',
             points : 6
