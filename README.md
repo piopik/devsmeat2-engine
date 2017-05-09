@@ -144,15 +144,6 @@ Engine created to provide service with neccessary functionality for devmeats #2 
 }
 ```
 
-#### userPoints
-
-```javascript
-{
-    username : 'Green',
-    points : 3
-}
-```
-
 ## Authors
 
 Piotrek Polus <ppolus@sointeractive.pl>
