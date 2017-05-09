@@ -17,6 +17,7 @@ export default class Game{
     state = {
         round : 0,
         activeQuestion : false,
+        corrects : 0
     };
 
     constructor(socket) {
@@ -39,16 +40,18 @@ export default class Game{
     }
 
     startQuestion(){
-
         clearTimeout(this.timeout);
 
         this.state.activeQuestion = Math.floor(Math.random() * this.questions.length);
+        this.state.corrects = 0;
         this.state.round++;
 
-        console.log(`SENDQUESTION (${this.state.activeQuestion})`);
+        console.log(`STARTQUESTION (${this.state.activeQuestion})`);
 
         this.socket.emit('question',{
-            question: this.questions[this.state.activeQuestion]
+            "question":this.questions[this.state.activeQuestion].question,
+            "type":this.questions[this.state.activeQuestion].type,
+            "answers":this.questions[this.state.activeQuestion].answers
         });
 
         this.timeout = setTimeout(() => {
@@ -63,32 +66,50 @@ export default class Game{
 
         clearTimeout(this.timeout);
 
+        this.socket.emit('questionFinish',{
+            'questionFinish' : true
+        });
+
         if(this.state.round< config.roundsLimit){
-
-            this.sendLeaderboard();
-
-            this.timeout = setTimeout(() => {
-                this.startQuestion();
-            }, config.leaderboardTime)
-
+            this.startLeaderboard();
         } else {
-
             this.finishGame();
-
         }
-
 
     }
 
-    sendLeaderboard(){
+    startLeaderboard(){
+        console.log(`STARTLEADERBOARD (${this.state.round})`);
 
-        console.log(`SENDLEADERBOARD (${this.state.round})`);
+        clearTimeout(this.timeout);
 
+        this.socket.emit('leaderboard',{
+            'leaderboard' : this.players.getLeaderboard()
+        } );
+
+        this.timeout = setTimeout(() => {
+            this.finishLeaderboard();
+        }, config.leaderboardTime)
+
+    }
+
+    finishLeaderboard(){
+        console.log("FINISHLEADERBOARD");
+
+        clearTimeout(this.timeout);
+
+        this.socket.emit('leaderboardFinish',{
+            'leaderboardFinish' : true
+        } );
+
+        this.startQuestion();
     }
 
     finishGame(){
-
         console.log("FINISHGAME");
+
+        this.socket.emit('gameFinish',{} );
+        this.socket.emit('leaderboard',{} );
 
     }
 

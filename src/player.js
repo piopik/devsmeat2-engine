@@ -4,13 +4,19 @@
 
 import shortid from 'shortid';
 import names from './data/names'
+import config from './config';
+
+import arrayEqual from './tools/arrayEqual'
+arrayEqual();
 
 export default class Player {
     id ;
     socket ;
     game ;
+    points = 0;
 
     constructor(socket,game) {
+
         this.socket = socket;
 
         this.id = shortid.generate();
@@ -33,13 +39,39 @@ export default class Player {
         });
 
         this.socket.on('answer', (data) => {
-            this.answer(data);
+            this.answer(data.answer);
         });
 
     }
 
-    answer(data){
-        
+    answer(answer){
+
+        if(this.game.questions[this.game.state.activeQuestion].correct.equals(answer)){
+
+            let tmp = this.game.corrects, points = 0;
+
+            this.game.corrects++;
+
+            if(this.game.corrects > config.pointSystem.length ){
+                this.game.finishQuestion();
+            }
+
+            if(tmp < config.pointSystem.lengt){
+                points = config.pointSystem[tmp];
+            }
+
+            this.message('CORRECT ANSWER '+ points);
+            console.log('CORRECT');
+
+        } else {
+            this.message('INCORRECT ANSWER');
+        }
+
     }
 
+    message(text){
+        this.socket.emit('message',{
+            text : text
+        });
+    }
 }

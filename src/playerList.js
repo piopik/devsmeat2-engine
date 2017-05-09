@@ -14,9 +14,8 @@ export default class{
 
         this.array.push(player);
 
-        player.game.socket.emit('message',{
-            text : `Player ${player.name} joined`
-        });
+        player.message(`Player ${player.name} joined`);
+
     };
 
     delete(player){
@@ -26,9 +25,7 @@ export default class{
             }
         }
 
-        player.game.socket.emit('message',{
-            text : `Player ${player.name} left`
-        });
+        player.message(`Player ${player.name} left`);
     };
 
     get(id) {
@@ -47,5 +44,24 @@ export default class{
                 }
             }
         }
+    };
+
+    getLeaderboard() {
+        let lboard = [];
+
+        for(var i = this.array.length - 1; i >= 0; i--) {
+            lboard.push({
+                id : this.array[i].id,
+                name : this.array[i].name,
+                color : this.array[i].color,
+                points : this.array[i].points,
+            })
+        }
+
+        lboard.sort(function(a, b) {
+            return a.points - b.points;
+        });
+
+        return lboard;
     }
 }

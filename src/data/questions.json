@@ -2,7 +2,7 @@
   {
     "question" : "a",
     "type" : "single",
-    "ansewers" : [
+    "answers" : [
       {
         "id" : 0,
         "answer" : "A"
@@ -20,12 +20,12 @@
         "answer" : "D"
       }
     ],
-    "correct" : 2
+    "correct" : [2]
   },
   {
     "question" : "a",
     "type" : "multi",
-    "ansewers" : [
+    "answers" : [
       {
         "id" : 0,
         "answer" : "A"

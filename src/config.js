@@ -12,6 +12,6 @@ export default {
 
     pointSystem : [3,2,1],
     pointsLimit : 30,
-    roundsLimit : 500
+    roundsLimit : 100
 
 }
