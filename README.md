@@ -32,7 +32,6 @@ Engine created to provide service with neccessary functionality for devmeats #2 
 
 ```javascript
 {
-    id : '41XTDbE',
     answer : [1,2,3,4]
 }
 ```
