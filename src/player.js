@@ -48,23 +48,34 @@ export default class Player {
 
         if(this.game.questions[this.game.state.activeQuestion].correct.equals(answer)){
 
-            let tmp = this.game.corrects, points = 0;
+            let tmp = this.game.state.corrects, points = 0;
+            this.game.state.corrects++;
 
-            this.game.corrects++;
+            if(tmp < config.pointSystem.length ){
 
-            if(this.game.corrects > config.pointSystem.length ){
-                this.game.finishQuestion();
-            }
-
-            if(tmp < config.pointSystem.lengt){
                 points = config.pointSystem[tmp];
-            }
+                this.points += points;
 
-            this.message('CORRECT ANSWER '+ points);
-            console.log('CORRECT');
+                this.socket.emit('questionResult',{
+                    correct : true,
+                    points : points
+                });
+
+            } else {
+
+                this.game.finishQuestion();
+                this.socket.emit('questionResult',{
+                    correct : true,
+                    points : 0
+                });
+
+            }
 
         } else {
-            this.message('INCORRECT ANSWER');
+            this.socket.emit('questionResult',{
+                correct : false,
+                points : 0
+            });
         }
 
     }

@@ -53,7 +53,7 @@ Engine created to provide service with neccessary functionality for devmeats #2 
 
 ```javascript
 {
-    test : 'User Red has joined the game'
+    text : 'User Red has joined the game'
 }
 ```
 
@@ -63,7 +63,7 @@ Engine created to provide service with neccessary functionality for devmeats #2 
 {
     "question" : "a",
     "type" : "single",
-    "ansewers" : [
+    "answers" : [
       {
         "id" : 0,
         "answer" : "A"
@@ -107,19 +107,19 @@ Engine created to provide service with neccessary functionality for devmeats #2 
 {
     leaderboard : [
         {
-            position : 1
+            id : 'HJDY5S1xZ',
             name : 'Red',
             color : '#ff0000',
             points : 21
         },
         {
-            position : 2
+            id : 'HJDY5S1xZ',
             name : 'Green',
             color : '#00ff00',
             points : 12
         },
         {
-            position : 3
+            id : 'HJDY5S1xZ',
             name : 'Blue',
             color : '#0000ff',
             points : 6
