@@ -33,6 +33,7 @@ export default class Player {
         });
 
         game.players.add(this);
+        game.message(`Player ${this.name} joined`);
 
         this.socket.on('disconnect', () => {
             this.game.players.delete(this);
@@ -60,6 +61,8 @@ export default class Player {
                     correct : true,
                     points : points
                 });
+
+                this.game.message(points+" points for "+this.name);
 
             } else {
 

@@ -7,11 +7,11 @@ export default {
     port : process.env.PORT || 3000,
     bodyLimit : "100kb",
 
-    answerTime : 5000,
-    leaderboardTime : 3000,
+    answerTime : 20000,
+    leaderboardTime : 10000,
 
     pointSystem : [3,2,1],
     pointsLimit : 30,
-    roundsLimit : 100
+    roundsLimit : 1000
 
 }

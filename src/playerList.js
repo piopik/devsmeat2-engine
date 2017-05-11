@@ -14,8 +14,6 @@ export default class{
 
         this.array.push(player);
 
-        player.message(`Player ${player.name} joined`);
-
     };
 
     delete(player){
@@ -61,6 +59,19 @@ export default class{
         lboard.sort(function(a, b) {
             return b.points - a.points;
         });
+
+        let position = 1;
+        let interval = 1;
+        for(let i = 0; i < lboard.length; i++) {
+            lboard[i].position = position;
+
+            if(lboard[i+1] && lboard[i+1].points < lboard[i].points){
+                interval = 1;
+                position += interval;
+            } else {
+                interval++;
+            }
+        }
 
         return lboard;
     }
