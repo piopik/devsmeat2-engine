@@ -33,7 +33,12 @@ export default class Player {
         });
 
         game.players.add(this);
-        game.message(`Player ${this.name} joined`);
+
+        game.message({
+            text : this.name,
+            icon : 'join',
+            color : this.color,
+        });
 
         this.socket.on('disconnect', () => {
             this.game.players.delete(this);
@@ -62,7 +67,11 @@ export default class Player {
                     points : points
                 });
 
-                this.game.message(points+" points for "+this.name);
+                this.game.message({
+                    text : this.name,
+                    icon : points+'pts',
+                    color : this.color,
+                });
 
             } else {
 
@@ -72,20 +81,31 @@ export default class Player {
                     points : 0
                 });
 
+                this.game.message({
+                    text : this.name,
+                    icon : 'good',
+                    color : this.color,
+                });
+
             }
 
         } else {
+
             this.socket.emit('questionResult',{
                 correct : false,
                 points : 0
             });
-        }
 
+            this.game.message({
+                text : this.name,
+                icon : 'wrong',
+                color : this.color,
+            });
+
+        }
     }
 
-    message(text){
-        this.socket.emit('message',{
-            text : text
-        });
+    message(msg){
+        this.socket.emit('message',msg);
     }
 }

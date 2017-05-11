@@ -113,10 +113,8 @@ export default class Game{
 
     }
 
-    message(text){
-        this.socket.emit('message',{
-            text : text
-        });
+    message(msg){
+        this.socket.emit('message',msg);
     }
 
 }
