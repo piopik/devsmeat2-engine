@@ -14,6 +14,7 @@ export default class Player {
     socket ;
     game ;
     points = 0;
+    answerLock = false;
 
     constructor(socket,game) {
 
@@ -45,7 +46,10 @@ export default class Player {
         });
 
         this.socket.on('answer', (data) => {
-            this.answer(data.answer);
+            if(!this.answerLock){
+                this.answerLock=true;
+                this.answer(data.answer);
+            }
         });
 
     }

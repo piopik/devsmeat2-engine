@@ -70,12 +70,15 @@ export default class Game{
             'questionFinish' : true
         });
 
+        for(let i=0; i < this.players.array.length; i++){
+            this.players.array[i].answerLock=false;
+        }
+
         if(this.state.round< config.roundsLimit){
             this.startLeaderboard();
         } else {
             this.finishGame();
         }
-
     }
 
     startLeaderboard(){
@@ -90,6 +93,8 @@ export default class Game{
         this.timeout = setTimeout(() => {
             this.finishLeaderboard();
         }, config.leaderboardTime)
+
+
 
     }
 
