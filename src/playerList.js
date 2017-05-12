@@ -66,8 +66,9 @@ export default class{
             lboard[i].position = position;
 
             if(lboard[i+1] && lboard[i+1].points < lboard[i].points){
-                interval = 1;
                 position += interval;
+                interval = 1;
+
             } else {
                 interval++;
             }

@@ -33,7 +33,7 @@ export default {
     {
       id : 6,
       name: "indigo",
-      color: "#4B0082"
+      color: "#8968CD"
     },
     {
       id : 7,
