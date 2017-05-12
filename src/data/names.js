@@ -2,18 +2,18 @@ export default {
   array: [
     {
       id : 0,
-      name: "red",
-      color: "#f00"
+      name: "cherry",
+      color: "#B0171F"
     },
     {
       id : 1,
-      name: "green",
-      color: "#0f0"
+      name: "grass",
+      color: "#00CD00"
     },
     {
       id : 2,
-      name: "blue",
-      color: "#00f"
+      name: "ocean",
+      color: "#1E90FF"
     },
     {
       id : 3,
@@ -47,12 +47,12 @@ export default {
     },
     {
       id : 9,
-      name: "steelblue",
+      name: "steel",
       color: "#4682B4"
     },
     {
       id : 10,
-      name: "skyblue",
+      name: "sky",
       color: "#87CEEB"
     },
     {
@@ -87,7 +87,7 @@ export default {
     },
     {
       id : 17,
-      name: "yellow",
+      name: "lemon",
       color: "#EEEE00"
     },
     {
@@ -117,13 +117,13 @@ export default {
     },
     {
       id : 23,
-      name: "brown",
-      color: "#A52A2A"
+      name: "chocolate",
+      color: "#CD5555"
     },
     {
       id : 24,
-      name: "black",
-      color: "#000000"
+      name: "plum",
+      color: "#EEAEEE"
     },
     {
       id : 25,
