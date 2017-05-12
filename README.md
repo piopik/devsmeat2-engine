@@ -52,7 +52,9 @@ Engine created to provide service with neccessary functionality for devmeats #2 
 
 ```javascript
 {
-    text : 'User Red has joined the game'
+    text : 'blue',
+    icon : 'wrong',
+    color : '#00f'
 }
 ```
 
