@@ -168,8 +168,9 @@ export default {
   ],
 
   getName(){
+
     let available =  this.array.filter((e) => {
-      return !e.used
+      return !e.use
     });
 
     let i = available[Math.floor(Math.random() * available.length)];
