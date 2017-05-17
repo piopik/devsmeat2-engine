@@ -57,7 +57,7 @@ export default {
     },
     {
       id : 11,
-      name: "lightblue",
+      name: "dolphin",
       color: "#ADD8E6"
     },
     {

@@ -77,19 +77,22 @@ export default class Player {
                     color : this.color,
                 });
 
+                if(tmp+1 === config.pointSystem.length){
+                    this.game.finishQuestion();
+                }
+
             } else {
 
-                this.game.finishQuestion();
                 this.socket.emit('questionResult',{
                     correct : true,
                     points : 0
                 });
 
-                this.game.message({
-                    text : this.name,
-                    icon : 'good',
-                    color : this.color,
-                });
+                // this.game.message({
+                //     text : this.name,
+                //     icon : 'good',
+                //     color : this.color,
+                // });
 
             }
 
@@ -100,11 +103,11 @@ export default class Player {
                 points : 0
             });
 
-            this.game.message({
-                text : this.name,
-                icon : 'wrong',
-                color : this.color,
-            });
+            // this.game.message({
+            //     text : this.name,
+            //     icon : 'wrong',
+            //     color : this.color,
+            // });
 
         }
     }
