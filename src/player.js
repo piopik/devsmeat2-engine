@@ -28,9 +28,15 @@ export default class Player {
         this.color = tmp.color;
 
         this.socket.emit('joined',{
-            name : this.name,
-            color : this.color,
-            id : this.id
+            answerTime : config.answerTime,
+            leaderboardTime : config.leaderboardTime,
+
+            user : {
+                name : this.name,
+                color : this.color,
+                id : this.id
+            }
+
         });
 
         game.players.add(this);
@@ -38,7 +44,7 @@ export default class Player {
         game.message({
             text : this.name,
             icon : 'join',
-            color : this.color,
+            color : this.color
         });
 
         this.socket.on('disconnect', () => {

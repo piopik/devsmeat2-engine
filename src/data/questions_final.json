@@ -1,0 +1,752 @@
+[
+  {
+    "question": "Npmowa paczka służąca do transpilowania komponentów vue przy użyciu browserify nazywa się",
+    "type": "single",
+    "answers": [
+      {
+        "id": 0,
+        "answer": "vueify"
+      },
+      {
+        "id": 1,
+        "answer": "vuex"
+      },
+      {
+        "id": 2,
+        "answer": "vuexify"
+      },
+      {
+        "id": 3,
+        "answer": "vify"
+      }
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "question": "Z którego systemu modułowania korzysta Browserify",
+    "type": "single",
+    "answers": [
+      {
+        "id": 0,
+        "answer": "CommonJS"
+      },
+      {
+        "id": 1,
+        "answer": "AMD"
+      },
+      {
+        "id": 2,
+        "answer": "UMD"
+      },
+      {
+        "id": 3,
+        "answer": "requireJS"
+      }
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "question": "Który z systemów modułowania jest domyślny dla Node.JS",
+    "type": "single",
+    "answers": [
+      {
+        "id": 0,
+        "answer": "CommonJS"
+      },
+      {
+        "id": 1,
+        "answer": "AMD"
+      },
+      {
+        "id": 2,
+        "answer": "UMD"
+      },
+      {
+        "id": 3,
+        "answer": "requireJS"
+      }
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "question": "Jak brzmi składnia do wywoływania komend zdefiniowanych w package.json",
+    "type": "single",
+    "answers": [
+      {
+        "id": 0,
+        "answer": "npm run <nazwa_komenty>"
+      },
+      {
+        "id": 1,
+        "answer": "npm script <nazwa_komenty>"
+      },
+      {
+        "id": 2,
+        "answer": "npm exec <nazwa_komenty>"
+      },
+      {
+        "id": 3,
+        "answer": "npm f <nazwa_komenty>"
+      }
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "question": "",
+    "type": "single",
+    "answers": [
+      {
+        "id": 0,
+        "answer": "@variable:"
+      },
+      {
+        "id": 1,
+        "answer": "$variable:"
+      },
+      {
+        "id": 2,
+        "answer": "--variable:"
+      },
+      {
+        "id": 3,
+        "answer": "#variable"
+      }
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "question": "Jak nazywa się konkretne narzędzie które dodaje niezbędne prefixy przy transpilacji do cssa.",
+    "type": "single",
+    "answers": [
+      {
+        "id": 0,
+        "answer": "autoprefixer"
+      },
+      {
+        "id": 1,
+        "answer": "postcss"
+      },
+      {
+        "id": 2,
+        "answer": "autocss"
+      },
+      {
+        "id": 3,
+        "answer": "postprefixer"
+      }
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "question": "Po której z wymienionych cssowych atrybutów lepiej nie animować",
+    "type": "single",
+    "answers": [
+      {
+        "id": 0,
+        "answer": "border"
+      },
+      {
+        "id": 1,
+        "answer": "opacity"
+      },
+      {
+        "id": 2,
+        "answer": "transform"
+      },
+      {
+        "id": 3,
+        "answer": "perspective"
+      }
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "question": "Która z częsci renderowania nie wystąpi przy zmianie bordera",
+    "type": "single",
+    "answers": [
+      {
+        "id": 0,
+        "answer": "style"
+      },
+      {
+        "id": 1,
+        "answer": "layout"
+      },
+      {
+        "id": 2,
+        "answer": "composite"
+      },
+      {
+        "id": 3,
+        "answer": "paint"
+      }
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "question": "Który z cssowych atrybutów pseudoelementów before i after musi być ustawiony by element się wyrenderował",
+    "type": "single",
+    "answers": [
+      {
+        "id": 0,
+        "answer": "content"
+      },
+      {
+        "id": 1,
+        "answer": "z-index"
+      },
+      {
+        "id": 2,
+        "answer": "position"
+      },
+      {
+        "id": 3,
+        "answer": "żaden"
+      }
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "question": "Jak rozwinąć skrót jednostki 'rem'",
+    "type": "single",
+    "answers": [
+      {
+        "id": 0,
+        "answer": "Wartośc na elemencie korzenia drzewa DOM"
+      },
+      {
+        "id": 1,
+        "answer": "Iloczyn wartości na trasie od korzenia drzewa DOM do elementu"
+      },
+      {
+        "id": 2,
+        "answer": "Odwrotność"
+      },
+      {
+        "id": 3,
+        "answer": "Wartość dziecka"
+      }
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "question": "Który fragment cssów wyśrodkuje zawartość wertykalnie i horyzontalnie",
+    "type": "single",
+    "answers": [
+      {
+        "id": 0,
+        "answer": "display: flex; align-items: center; justify-content: center;"
+      },
+      {
+        "id": 1,
+        "answer": "display: flex; align: center; justify-content: center;"
+      },
+      {
+        "id": 2,
+        "answer": "display: flex; align-items: center; justify: center;"
+      },
+      {
+        "id": 3,
+        "answer": "display: flex; align: center; justify: center;"
+      }
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "question": "Który fragment cssów rozproszy zawartość horyzontalnie bez marginesów",
+    "type": "single",
+    "answers": [
+      {
+        "id": 0,
+        "answer": "display: flex; justify-content: space-between"
+      },
+      {
+        "id": 1,
+        "answer": "display: flex; justify-content: space-around"
+      },
+      {
+        "id": 2,
+        "answer": "display: flex; justify-content: center"
+      },
+      {
+        "id": 3,
+        "answer": "display: flex; justify-content: no-margin"
+      }
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "question": "Rozwiń skrót BEM",
+    "type": "single",
+    "answers": [
+      {
+        "id": 0,
+        "answer": "Block Element Modifier"
+      },
+      {
+        "id": 1,
+        "answer": "Block Engine Modifier"
+      },
+      {
+        "id": 2,
+        "answer": "Block Element Modulizer"
+      },
+      {
+        "id": 3,
+        "answer": "Bind Element Modifier"
+      }
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "question": "Która z klas spełnia założenia BEM",
+    "type": "single",
+    "answers": [
+      {
+        "id": 0,
+        "answer": "news__title--active"
+      },
+      {
+        "id": 1,
+        "answer": "news__hover--title"
+      },
+      {
+        "id": 2,
+        "answer": "news_title-active"
+      },
+      {
+        "id": 3,
+        "answer": "newsTitleActive"
+      }
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "question": "Jak nazywa sie biblioteka do managementu stanem w vue",
+    "type": "single",
+    "answers": [
+      {
+        "id": 0,
+        "answer": "vuex"
+      },
+      {
+        "id": 1,
+        "answer": "vuix"
+      },
+      {
+        "id": 2,
+        "answer": "vueify"
+      },
+      {
+        "id": 3,
+        "answer": "redux"
+      }
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "question": "Które z części podejścia MVC obejmuje Vue",
+    "type": "single",
+    "answers": [
+      {
+        "id": 0,
+        "answer": "Controller + View"
+      },
+      {
+        "id": 1,
+        "answer": "Model"
+      },
+      {
+        "id": 2,
+        "answer": "Model + Controller + View"
+      },
+      {
+        "id": 3,
+        "answer": "Model + View"
+      }
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "question": "Które z pojęć nie nalezy do specyfikacji Web Components API",
+    "type": "single",
+    "answers": [
+      {
+        "id": 0,
+        "answer": "CSS Modules"
+      },
+      {
+        "id": 1,
+        "answer": "HTML Templates"
+      },
+      {
+        "id": 2,
+        "answer": "Custom Elements"
+      },
+      {
+        "id": 3,
+        "answer": "Shadow DOM"
+      }
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "question": "Który z eventów obiektu Vue wystąpi najpóźniej",
+    "type": "single",
+    "answers": [
+      {
+        "id": 0,
+        "answer": "mounted"
+      },
+      {
+        "id": 1,
+        "answer": "beforeMount"
+      },
+      {
+        "id": 2,
+        "answer": "created"
+      },
+      {
+        "id": 3,
+        "answer": "beforeCreated"
+      }
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "question": "Jak nazywa sie rozszerzenie plików komponentow Vue",
+    "type": "single",
+    "answers": [
+      {
+        "id": 0,
+        "answer": ".vue"
+      },
+      {
+        "id": 1,
+        "answer": ".vx"
+      },
+      {
+        "id": 2,
+        "answer": ".jsx"
+      },
+      {
+        "id": 3,
+        "answer": ".comp"
+      }
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "question": "Która z funkcji służy do tworzenia komponentu Vue",
+    "type": "single",
+    "answers": [
+      {
+        "id": 0,
+        "answer": "Vue.component('component', {})"
+      },
+      {
+        "id": 1,
+        "answer": "Vue.create('component', {})"
+      },
+      {
+        "id": 2,
+        "answer": "Vue('component', {})"
+      },
+      {
+        "id": 3,
+        "answer": "Vue.c('component', {})"
+      }
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "question": "Którego z propertisów nie ma w specyfikacji komponentu Vue",
+    "type": "single",
+    "answers": [
+      {
+        "id": 0,
+        "answer": "attribute"
+      },
+      {
+        "id": 1,
+        "answer": "computed"
+      },
+      {
+        "id": 2,
+        "answer": "method"
+      },
+      {
+        "id": 3,
+        "answer": "watch"
+      }
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "question": "Do czego służą propsy w Vue",
+    "type": "single",
+    "answers": [
+      {
+        "id": 0,
+        "answer": "Przekazywanie danych między komponentów"
+      },
+      {
+        "id": 1,
+        "answer": "Przechowywanie stanu komponentu"
+      },
+      {
+        "id": 2,
+        "answer": "Ustawienia aplikacji"
+      },
+      {
+        "id": 3,
+        "answer": "Vue nie ma propsów"
+      }
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "question": "Które zdanie o socket.io jest fałszywe",
+    "type": "single",
+    "answers": [
+      {
+        "id": 0,
+        "answer": "Socket.io to standard komunikacji wprowadzony przez W3C"
+      },
+      {
+        "id": 1,
+        "answer": "Socket.io nie wykorzystuje WebRTC"
+      },
+      {
+        "id": 2,
+        "answer": "Socket.io to biblioteka udostepniająca łatwe  API do komunikowania po Websocketach"
+      },
+      {
+        "id": 3,
+        "answer": "Socket.io ma wersję zarówno dla klienta jak i servera"
+      }
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "question": "Które zdanie o arrow functions jest fałszywe",
+    "type": "single",
+    "answers": [
+      {
+        "id": 0,
+        "answer": "Nie da sie ich bezpośrednio inwokować"
+      },
+      {
+        "id": 1,
+        "answer": "This nie jest bindowane do wewnątrz"
+      },
+      {
+        "id": 2,
+        "answer": "Ciało funkcji izoluje sie od use strick"
+      },
+      {
+        "id": 3,
+        "answer": "Nie ma dostępu do tablicy argumentów"
+      }
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "question": "Z którego poz(nad) zbioru JS korzystaliśmy podczas warsztatów.",
+    "type": "single",
+    "answers": [
+      {
+        "id": 0,
+        "answer": "ES2015"
+      },
+      {
+        "id": 1,
+        "answer": "ES2016"
+      },
+      {
+        "id": 2,
+        "answer": "CofeeScript"
+      },
+      {
+        "id": 3,
+        "answer": "TypeScript"
+      }
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "question": "Która z bibliotek do tworzenia aplikacji mobilnych jest oparta na Vue",
+    "type": "single",
+    "answers": [
+      {
+        "id": 0,
+        "answer": "Żadna"
+      },
+      {
+        "id": 1,
+        "answer": "React native"
+      },
+      {
+        "id": 2,
+        "answer": "Ionic"
+      },
+      {
+        "id": 3,
+        "answer": "NativeScript"
+      }
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "question": "Jak nazywa się silnik grywalizacyjny SoInteractive",
+    "type": "single",
+    "answers": [
+      {
+        "id": 0,
+        "answer": "IsaaCloud"
+      },
+      {
+        "id": 1,
+        "answer": "Taut"
+      },
+      {
+        "id": 2,
+        "answer": "Gamifier"
+      },
+      {
+        "id": 3,
+        "answer": "CupClub"
+      }
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "question": "Który z atrybutów CSSowych służy do manewrowania perspektywą zbieżną",
+    "type": "single",
+    "answers": [
+      {
+        "id": 0,
+        "answer": "Perspective"
+      },
+      {
+        "id": 1,
+        "answer": "Will-change"
+      },
+      {
+        "id": 2,
+        "answer": "direction"
+      },
+      {
+        "id": 3,
+        "answer": "transform-origin"
+      }
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "question": "Jak nazywa się proces sprawdzania poprawności kodu",
+    "type": "single",
+    "answers": [
+      {
+        "id": 0,
+        "answer": "Linting"
+      },
+      {
+        "id": 1,
+        "answer": "Transpilowanie"
+      },
+      {
+        "id": 2,
+        "answer": "Kompilowanie"
+      },
+      {
+        "id": 3,
+        "answer": "Checkowanie"
+      }
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "question": "Które z tych zdań nie jest prawdziwe",
+    "type": "single",
+    "answers": [
+      {
+        "id": 0,
+        "answer": "Vue.js ma wbudowaną bibliotekę Rx.js"
+      },
+      {
+        "id": 1,
+        "answer": "Vue.js opiera się na własnej implementacji obiektu observable"
+      },
+      {
+        "id": 2,
+        "answer": "Vue.js korzysta z VirtualDOMu"
+      },
+      {
+        "id": 3,
+        "answer": "React i Angular wypadają gorzej w testach benchmarkowych niż Vue."
+      }
+    ],
+    "correct": [
+      0
+    ]
+  }
+]

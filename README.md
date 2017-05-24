@@ -42,9 +42,13 @@ Engine created to provide service with neccessary functionality for devmeats #2 
 
 ```javascript
 {
-    name : 'Red',
-    color : '#ff0000',
-    id : '41XTDbE'
+    user : {
+        name : 'Red',
+        color : '#ff0000',
+        id : '41XTDbE'
+    }
+    answerTime : 20000,
+    leaderboardTime : 10000
 }
 ```
 

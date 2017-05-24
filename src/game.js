@@ -26,7 +26,14 @@ export default class Game{
         this.players = new PlayerList();
         this.status = 'new';
 
-        let normalizedPath = path.join(__dirname, "data/questions.json");
+        let normalizedPath ='';
+
+        if(config.mode==='final'){
+            normalizedPath = path.join(__dirname, "data/questions_final.json");
+        } else {
+            normalizedPath = path.join(__dirname, "data/questions.json");
+        }
+
         this.questions = JSON.parse(fs.readFileSync(normalizedPath, 'utf8'));
 
         this.answersAmount = 0;
@@ -70,11 +77,15 @@ export default class Game{
             'questionFinish' : true
         });
 
+        if(config.mode==='final' && this.state.corrects > 0){
+            this.questions.splice(this.state.activeQuestion, 1);
+        }
+
         for(let i=0; i < this.players.array.length; i++){
             this.players.array[i].answerLock=false;
         }
 
-        if(this.state.round< config.roundsLimit){
+        if(this.state.round < config.roundsLimit && this.questions.length > 0){
             this.startLeaderboard();
         } else {
             this.finishGame();
