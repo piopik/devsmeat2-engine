@@ -80,19 +80,19 @@
     "answers": [
       {
         "id": 0,
-        "answer": "npm run <nazwa_komenty>"
+        "answer": "npm run <nazwa_komendy>"
       },
       {
         "id": 1,
-        "answer": "npm script <nazwa_komenty>"
+        "answer": "npm script <nazwa_komendy>"
       },
       {
         "id": 2,
-        "answer": "npm exec <nazwa_komenty>"
+        "answer": "npm exec <nazwa_komendy>"
       },
       {
         "id": 3,
-        "answer": "npm f <nazwa_komenty>"
+        "answer": "npm f <nazwa_komendy>"
       }
     ],
     "correct": [
