@@ -1,6 +1,6 @@
 [
   {
-    "question": "Npmowa paczka służąca do transpilowania komponentów vue przy użyciu browserify nazywa się",
+    "question": "Npmowa paczka służąca do transpilowania komponentów vue przy użyciu browserify nazywa się...",
     "type": "single",
     "answers": [
       {
@@ -25,7 +25,7 @@
     ]
   },
   {
-    "question": "Z którego systemu modułowania korzysta Browserify",
+    "question": "Z którego systemu modułowania korzysta Browserify?",
     "type": "single",
     "answers": [
       {
@@ -50,7 +50,7 @@
     ]
   },
   {
-    "question": "Który z systemów modułowania jest domyślny dla Node.JS",
+    "question": "Który z systemów modułowania jest domyślny dla Node.JS?",
     "type": "single",
     "answers": [
       {
@@ -75,7 +75,7 @@
     ]
   },
   {
-    "question": "Jak brzmi składnia do wywoływania komend zdefiniowanych w package.json",
+    "question": "Jak brzmi składnia do wywoływania komend zdefiniowanych w package.json?",
     "type": "single",
     "answers": [
       {
@@ -100,7 +100,7 @@
     ]
   },
   {
-    "question": "",
+    "question": "Która ze składni definiowania zmiennych jest prawdiłowa dla LESS?",
     "type": "single",
     "answers": [
       {
@@ -125,7 +125,7 @@
     ]
   },
   {
-    "question": "Jak nazywa się konkretne narzędzie które dodaje niezbędne prefixy przy transpilacji do cssa.",
+    "question": "Jak nazywa się konkretne narzędzie które dodaje niezbędne prefixy przy transpilacji do CSS?",
     "type": "single",
     "answers": [
       {
@@ -150,7 +150,7 @@
     ]
   },
   {
-    "question": "Po której z wymienionych cssowych atrybutów lepiej nie animować",
+    "question": "Po którym z wymienionych cssowych atrybutów lepiej nie animować",
     "type": "single",
     "answers": [
       {
@@ -225,7 +225,7 @@
     ]
   },
   {
-    "question": "Jak rozwinąć skrót jednostki 'rem'",
+    "question": "Jak rozwinąć skrót jednostki 'rem'?",
     "type": "single",
     "answers": [
       {
@@ -242,7 +242,7 @@
       },
       {
         "id": 3,
-        "answer": "Wartość dziecka"
+        "answer": "Wartość dziecka elementu"
       }
     ],
     "correct": [
@@ -250,7 +250,7 @@
     ]
   },
   {
-    "question": "Który fragment cssów wyśrodkuje zawartość wertykalnie i horyzontalnie",
+    "question": "Który fragment cssów wyśrodkuje zawartość wertykalnie i horyzontalnie?",
     "type": "single",
     "answers": [
       {
@@ -275,7 +275,7 @@
     ]
   },
   {
-    "question": "Który fragment cssów rozproszy zawartość horyzontalnie bez marginesów",
+    "question": "Który fragment cssów rozproszy zawartość horyzontalnie bez marginesów?",
     "type": "single",
     "answers": [
       {
@@ -325,7 +325,7 @@
     ]
   },
   {
-    "question": "Która z klas spełnia założenia BEM",
+    "question": "Która z klas spełnia założenia BEM?",
     "type": "single",
     "answers": [
       {
@@ -350,7 +350,7 @@
     ]
   },
   {
-    "question": "Jak nazywa sie biblioteka do managementu stanem w vue",
+    "question": "Jak nazywa sie biblioteka do managementu stanem w Vue?",
     "type": "single",
     "answers": [
       {
@@ -375,7 +375,7 @@
     ]
   },
   {
-    "question": "Które z części podejścia MVC obejmuje Vue",
+    "question": "Które z części podejścia MVC obejmuje Vue?",
     "type": "single",
     "answers": [
       {
@@ -400,7 +400,7 @@
     ]
   },
   {
-    "question": "Które z pojęć nie nalezy do specyfikacji Web Components API",
+    "question": "Które z pojęć nie nalezy do specyfikacji Web Components API?",
     "type": "single",
     "answers": [
       {
@@ -425,7 +425,7 @@
     ]
   },
   {
-    "question": "Który z eventów obiektu Vue wystąpi najpóźniej",
+    "question": "Który z eventów obiektu Vue wystąpi najpóźniej?",
     "type": "single",
     "answers": [
       {
@@ -450,7 +450,7 @@
     ]
   },
   {
-    "question": "Jak nazywa sie rozszerzenie plików komponentow Vue",
+    "question": "Jak nazywa sie rozszerzenie plików komponentow Vue?",
     "type": "single",
     "answers": [
       {
@@ -475,7 +475,7 @@
     ]
   },
   {
-    "question": "Która z funkcji służy do tworzenia komponentu Vue",
+    "question": "Która z funkcji służy do tworzenia komponentu Vue?",
     "type": "single",
     "answers": [
       {
@@ -500,7 +500,7 @@
     ]
   },
   {
-    "question": "Którego z propertisów nie ma w specyfikacji komponentu Vue",
+    "question": "Którego z propertisów nie ma w specyfikacji komponentu Vue?",
     "type": "single",
     "answers": [
       {
@@ -525,12 +525,12 @@
     ]
   },
   {
-    "question": "Do czego służą propsy w Vue",
+    "question": "Do czego służą propsy w Vue?",
     "type": "single",
     "answers": [
       {
         "id": 0,
-        "answer": "Przekazywanie danych między komponentów"
+        "answer": "Przekazywanie danych między komponentamiw"
       },
       {
         "id": 1,
@@ -550,7 +550,7 @@
     ]
   },
   {
-    "question": "Które zdanie o socket.io jest fałszywe",
+    "question": "Które zdanie o socket.io jest fałszywe?",
     "type": "single",
     "answers": [
       {
@@ -575,12 +575,12 @@
     ]
   },
   {
-    "question": "Które zdanie o arrow functions jest fałszywe",
+    "question": "Które zdanie o arrow functions jest fałszywe?",
     "type": "single",
     "answers": [
       {
         "id": 0,
-        "answer": "Nie da sie ich bezpośrednio inwokować"
+        "answer": "Nie da sie ich bezpośrednio wywoływać"
       },
       {
         "id": 1,
@@ -588,7 +588,7 @@
       },
       {
         "id": 2,
-        "answer": "Ciało funkcji izoluje sie od use strick"
+        "answer": "Ciało funkcji izoluje sie od use strict"
       },
       {
         "id": 3,
@@ -600,7 +600,7 @@
     ]
   },
   {
-    "question": "Z którego poz(nad) zbioru JS korzystaliśmy podczas warsztatów.",
+    "question": "Z którego nadzbioru JS korzystaliśmy podczas warsztatów?",
     "type": "single",
     "answers": [
       {
@@ -625,7 +625,7 @@
     ]
   },
   {
-    "question": "Która z bibliotek do tworzenia aplikacji mobilnych jest oparta na Vue",
+    "question": "Która z bibliotek do tworzenia aplikacji mobilnych jest oparta na Vue?",
     "type": "single",
     "answers": [
       {
@@ -650,7 +650,7 @@
     ]
   },
   {
-    "question": "Jak nazywa się silnik grywalizacyjny SoInteractive",
+    "question": "Jak nazywa się silnik grywalizacyjny SoInteractive?",
     "type": "single",
     "answers": [
       {
@@ -675,7 +675,7 @@
     ]
   },
   {
-    "question": "Który z atrybutów CSSowych służy do manewrowania perspektywą zbieżną",
+    "question": "Który z atrybutów CSSowych służy do manewrowania perspektywą zbieżną?",
     "type": "single",
     "answers": [
       {
@@ -700,7 +700,7 @@
     ]
   },
   {
-    "question": "Jak nazywa się proces sprawdzania poprawności kodu",
+    "question": "Jak nazywa się proces sprawdzania poprawności kodu?",
     "type": "single",
     "answers": [
       {
@@ -725,7 +725,7 @@
     ]
   },
   {
-    "question": "Które z tych zdań nie jest prawdziwe",
+    "question": "Które z tych zdań nie jest prawdziwe?",
     "type": "single",
     "answers": [
       {
