@@ -169,14 +169,14 @@ export default {
 
   getName(){
 
-    let available =  this.array.filter((e) => {
-      return !e.use
-    });
+    // let available =  this.array.filter((e) => {
+    //   return !e.use
+    // });
 
-    let i = available[Math.floor(Math.random() * available.length)];
+    // let i = available[Math.floor(Math.random() * available.length)];
 
-    this.array[i.id].use=true;
+    // this.array[i.id].use=true;
 
-    return i
+    return this.array[Math.floor(Math.random() * this.array.length)];
   }
 }
