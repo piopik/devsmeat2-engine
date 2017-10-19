@@ -85,7 +85,7 @@ export default class Game{
             this.players.array[i].answerLock=false;
         }
 
-        if((config.roundsLimit && this.state.round < config.roundsLimit) && this.questions.length > 0){
+        if(!config.roundsLimit || (this.state.round < config.roundsLimit && this.questions.length > 0)){
             this.startLeaderboard();
         } else {
             this.finishGame();
