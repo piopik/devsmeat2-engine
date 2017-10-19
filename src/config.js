@@ -12,7 +12,7 @@ export default {
 
     pointSystem : [3,2,1],
     pointsLimit : 30,
-    roundsLimit : 1000,
+    roundsLimit : 0,
 
     // default/final
     mode : 'default'
