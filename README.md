@@ -3,7 +3,9 @@
 
 ## Intro
 
-Engine created to provide service with neccessary functionality for devmeats #2 workshops.
+Engine created to provide service with neccessary functionality for Devsmeat #2 workshops.
+The event took place on 13th June 2017, and 19th October 2017 at SoInteractive, Kraków, Poland.
+For more informations about Devsmeat and SoInteractive please check www.devsmeat.pl and www.sointeractive.co .
 
 ## Requirements
 
